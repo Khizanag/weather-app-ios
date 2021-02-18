@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TodayCarouselViewCell" customModule="Weather_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1066" height="1318"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="1066" height="1318"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6X-ba-3kR">
+                        <rect key="frame" x="0.0" y="0.0" width="1066" height="1318"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhZ-dD-dce" userLabel="upperView">
+                                <rect key="frame" x="53.5" y="0.0" width="959" height="659"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tbilisi, Georgia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6us-ib-6FX" userLabel="location">
+                                        <rect key="frame" x="191.5" y="382.5" width="576" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-2*C | Misty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdP-Gz-NXW" userLabel="description">
+                                        <rect key="frame" x="163" y="479.5" width="633" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="nKr-J1-wiq">
+                                        <rect key="frame" x="239.5" y="-22.5" width="480" height="480"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nKr-J1-wiq" secondAttribute="height" multiplier="1:1" id="73V-eI-7Py"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nKr-J1-wiq" firstAttribute="width" secondItem="rhZ-dD-dce" secondAttribute="width" multiplier="0.5" id="4eW-o5-aZF"/>
+                                    <constraint firstItem="nKr-J1-wiq" firstAttribute="centerX" secondItem="rhZ-dD-dce" secondAttribute="centerX" id="Q3p-pY-2Jq"/>
+                                    <constraint firstItem="CdP-Gz-NXW" firstAttribute="centerX" secondItem="rhZ-dD-dce" secondAttribute="centerX" id="S3u-yn-dYA"/>
+                                    <constraint firstItem="6us-ib-6FX" firstAttribute="width" secondItem="rhZ-dD-dce" secondAttribute="width" multiplier="0.6" id="XQc-Z6-1wM"/>
+                                    <constraint firstItem="CdP-Gz-NXW" firstAttribute="centerY" secondItem="rhZ-dD-dce" secondAttribute="centerY" multiplier="1.5" id="ghK-2w-K88"/>
+                                    <constraint firstItem="6us-ib-6FX" firstAttribute="centerY" secondItem="rhZ-dD-dce" secondAttribute="centerY" multiplier="1.2" id="oHx-1F-amM"/>
+                                    <constraint firstItem="CdP-Gz-NXW" firstAttribute="width" secondItem="rhZ-dD-dce" secondAttribute="width" multiplier="0.66" id="otQ-CP-mcq"/>
+                                    <constraint firstItem="6us-ib-6FX" firstAttribute="centerX" secondItem="rhZ-dD-dce" secondAttribute="centerX" id="pCA-G4-SCR"/>
+                                    <constraint firstItem="nKr-J1-wiq" firstAttribute="centerY" secondItem="rhZ-dD-dce" secondAttribute="centerY" multiplier="0.66" id="w2B-fT-xqz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHb-BF-x1L" userLabel="middleView">
+                                <rect key="frame" x="320" y="658.5" width="426" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="0v0-Qn-EdL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYm-T5-XPe" userLabel="lowerView">
+                                <rect key="frame" x="53.5" y="659" width="959" height="659"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IVd-4K-7gt">
+                                        <rect key="frame" x="0.0" y="145" width="959" height="435"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSx-ga-psz" customClass="TodayWeatherInfoLine" customModule="Weather_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="959" height="108.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcv-eT-5kL" customClass="TodayWeatherInfoLine" customModule="Weather_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="108.5" width="959" height="109"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwQ-2Q-pf1" customClass="TodayWeatherInfoLine" customModule="Weather_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="217.5" width="959" height="108.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMV-Up-mXJ" customClass="TodayWeatherInfoLine" customModule="Weather_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="326" width="959" height="109"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IVd-4K-7gt" firstAttribute="height" secondItem="UYm-T5-XPe" secondAttribute="height" multiplier="0.66" id="3OM-a8-e5H"/>
+                                    <constraint firstItem="IVd-4K-7gt" firstAttribute="leading" secondItem="UYm-T5-XPe" secondAttribute="leading" id="YOO-7Q-xza"/>
+                                    <constraint firstAttribute="trailing" secondItem="IVd-4K-7gt" secondAttribute="trailing" id="Yfe-Ng-u2y"/>
+                                    <constraint firstItem="IVd-4K-7gt" firstAttribute="centerY" secondItem="UYm-T5-XPe" secondAttribute="centerY" multiplier="1.1" id="pJE-rB-pm2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jHb-BF-x1L" firstAttribute="centerY" secondItem="V6X-ba-3kR" secondAttribute="centerY" id="1Uh-DG-u8U"/>
+                            <constraint firstItem="rhZ-dD-dce" firstAttribute="top" secondItem="V6X-ba-3kR" secondAttribute="top" id="Faa-9X-CbD"/>
+                            <constraint firstItem="rhZ-dD-dce" firstAttribute="width" secondItem="V6X-ba-3kR" secondAttribute="width" multiplier="0.9" id="Grg-eh-J7s"/>
+                            <constraint firstItem="rhZ-dD-dce" firstAttribute="centerX" secondItem="V6X-ba-3kR" secondAttribute="centerX" id="KaW-eG-oDf"/>
+                            <constraint firstItem="UYm-T5-XPe" firstAttribute="width" secondItem="V6X-ba-3kR" secondAttribute="width" multiplier="0.9" id="MXn-32-eh5"/>
+                            <constraint firstItem="UYm-T5-XPe" firstAttribute="height" secondItem="V6X-ba-3kR" secondAttribute="height" multiplier="0.5" id="XZY-BN-Yfm"/>
+                            <constraint firstItem="jHb-BF-x1L" firstAttribute="centerX" secondItem="V6X-ba-3kR" secondAttribute="centerX" id="jcl-Un-Ot1"/>
+                            <constraint firstItem="rhZ-dD-dce" firstAttribute="height" secondItem="V6X-ba-3kR" secondAttribute="height" multiplier="0.5" id="lAp-je-tAF"/>
+                            <constraint firstItem="UYm-T5-XPe" firstAttribute="centerY" secondItem="V6X-ba-3kR" secondAttribute="centerY" multiplier="1.5" id="oXR-TG-Pl5"/>
+                            <constraint firstItem="UYm-T5-XPe" firstAttribute="centerX" secondItem="V6X-ba-3kR" secondAttribute="centerX" id="xl0-b2-2Fd"/>
+                            <constraint firstItem="jHb-BF-x1L" firstAttribute="width" secondItem="V6X-ba-3kR" secondAttribute="width" multiplier="0.4" id="zTu-of-Ctb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="V6X-ba-3kR" secondAttribute="bottom" id="CeF-Qv-iMk"/>
+                <constraint firstItem="V6X-ba-3kR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DNN-v4-eYo"/>
+                <constraint firstItem="V6X-ba-3kR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PDR-HG-Ugg"/>
+                <constraint firstAttribute="trailing" secondItem="V6X-ba-3kR" secondAttribute="trailing" id="f7Y-69-SjK"/>
+            </constraints>
+            <size key="customSize" width="1066" height="1318"/>
+            <connections>
+                <outlet property="cloudinessRow" destination="LSx-ga-psz" id="Bbf-lX-lSD"/>
+                <outlet property="humidityRow" destination="Vcv-eT-5kL" id="pjG-R4-r6W"/>
+                <outlet property="icon" destination="nKr-J1-wiq" id="Tja-Pt-qak"/>
+                <outlet property="locationDescriptionLabel" destination="6us-ib-6FX" id="r4A-Ti-ErI"/>
+                <outlet property="mainDescription" destination="CdP-Gz-NXW" id="8yZ-XD-2t7"/>
+                <outlet property="mainView" destination="V6X-ba-3kR" id="PzM-cr-I32"/>
+                <outlet property="windDirectionRow" destination="bMV-Up-mXJ" id="gHB-KO-SVz"/>
+                <outlet property="windSpeedRow" destination="mwQ-2Q-pf1" id="YRM-aE-fvG"/>
+            </connections>
+            <point key="canvasLocation" x="-268.1159420289855" y="480.13392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sun" width="227" height="227"/>
+        <namedColor name="AccentColor">
+            <color red="0.9882352941176471" green="0.91764705882352937" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

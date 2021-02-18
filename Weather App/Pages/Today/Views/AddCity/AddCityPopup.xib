@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCityPopup" customModule="Weather_App" customModuleProvider="target">
+            <connections>
+                <outlet property="addCityButton" destination="1BP-JP-GxR" id="Wub-XP-2Pf"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="P2f-Bm-fpI"/>
+                <outlet property="descriptionLabel" destination="7sE-UI-OLT" id="Vcn-nv-sKE"/>
+                <outlet property="textField" destination="FuS-lF-3cn" id="4wB-8g-HQB"/>
+                <outlet property="titleLabel" destination="hhW-aL-yrk" id="fjS-Tb-BgL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="370"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BP-JP-GxR" userLabel="addButton" customClass="LoadingButton" customModule="MHLoadingButton">
+                    <rect key="frame" x="196" y="273" width="86" height="85"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1BP-JP-GxR" secondAttribute="height" multiplier="1:1" id="5mU-nQ-MRy"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" backgroundImage="plus.circle.fill" catalog="system">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="withShadow" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addButtonTapHandler:" destination="-1" eventType="touchUpInside" id="MWf-Dw-VCf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter City name you wish to add" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7sE-UI-OLT" userLabel="descriptionLabel">
+                    <rect key="frame" x="80" y="116" width="318" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhW-aL-yrk" userLabel="title">
+                    <rect key="frame" x="143.5" y="51.5" width="191" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FuS-lF-3cn">
+                    <rect key="frame" x="80" y="173" width="318" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="r2k-SB-MPS"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="green-gradient-start"/>
+            <constraints>
+                <constraint firstItem="7sE-UI-OLT" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="0.666" id="ByZ-B0-nud"/>
+                <constraint firstItem="7sE-UI-OLT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Stl-56-cUS"/>
+                <constraint firstItem="FuS-lF-3cn" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="UVA-v6-UVy"/>
+                <constraint firstItem="7sE-UI-OLT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.666" id="YVz-Lx-XTc"/>
+                <constraint firstItem="1BP-JP-GxR" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="baW-Lt-kmr"/>
+                <constraint firstItem="1BP-JP-GxR" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="1.66" id="g2c-N8-gcy"/>
+                <constraint firstItem="hhW-aL-yrk" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="0.333" id="iFT-we-mf3"/>
+                <constraint firstItem="FuS-lF-3cn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.666" id="kVT-rg-pHo"/>
+                <constraint firstItem="hhW-aL-yrk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="lU0-gm-Ns8"/>
+                <constraint firstItem="hhW-aL-yrk" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="o0M-3z-rMj"/>
+                <constraint firstItem="1BP-JP-GxR" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.18" id="rII-2D-thl"/>
+                <constraint firstItem="FuS-lF-3cn" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="sVL-15-pR3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="182.60869565217394" y="-112.5"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="1BP-JP-GxR">
+            <size key="intrinsicContentSize" width="20" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="green-gradient-start">
+            <color red="0.5" green="0.87699997425079346" blue="0.68999999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

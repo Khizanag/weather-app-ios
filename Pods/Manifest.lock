@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.4.1)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
+  - CollectionViewPagingLayout (0.4.0)
+  - MHLoadingButton (0.1.2)
+  - ScalingCarousel (3.2.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+
+DEPENDENCIES:
+  - AlamofireImage (~> 4.1)
+  - CollectionViewPagingLayout
+  - MHLoadingButton
+  - ScalingCarousel
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - CollectionViewPagingLayout
+    - MHLoadingButton
+    - ScalingCarousel
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  CollectionViewPagingLayout: 38b1bd88c6b61bfa9a92c03d13189fe808953559
+  MHLoadingButton: a08f05dfe866e6b2febd97884c1cf1427d25f6f0
+  ScalingCarousel: d40f0ce438af5cfb2225e2f723f7161597961128
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+
+PODFILE CHECKSUM: 8534e9041a07a485d5c816f20aef98435417cbe7
+
+COCOAPODS: 1.10.1
